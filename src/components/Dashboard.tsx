@@ -105,15 +105,12 @@ const Dashboard: React.FC<DashboardProps> = ({
     switch (dateRange) {
       case 'week':
         multiplier = 7;
-        label = 'This Week';
         break;
       case 'month':
         multiplier = 30;
-        label = 'This Month';
         break;
       default:
         multiplier = 1;
-        label = 'Today';
     }
     
     return {
