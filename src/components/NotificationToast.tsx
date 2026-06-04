@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Bell, X, CheckCircle, AlertCircle, Info } from 'lucide-react';
+import { X, CheckCircle, AlertCircle, Info } from 'lucide-react';
 
 export interface Notification {
   id: string;

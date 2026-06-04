@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, PieChart, Pie, Cell, AreaChart, Area
@@ -97,12 +97,10 @@ const Dashboard: React.FC<DashboardProps> = ({
   const [animatedSat, setAnimatedSat] = useState(0);
   const [animatedCost, setAnimatedCost] = useState(0);
   const [showExportModal, setShowExportModal] = useState(false);
-  const isFirstRender = useRef(true);
 
   // Filter data based on date range
   const getFilteredData = () => {
     let multiplier = 1;
-    let label = 'Today';
     
     switch (dateRange) {
       case 'week':

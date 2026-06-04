@@ -36,10 +36,10 @@ export function exportChatToText(messages: Message[], filename: string): void {
 }
 
 // Download chart as PNG
-export function downloadChartAsPNG(chartElement: HTMLElement, filename: string): void {
+export function downloadChartAsPNG(): void {
   // This would typically use html2canvas or similar library
   // For now, we'll create a placeholder implementation
-  console.log('Downloading chart as PNG:', filename);
+  console.log('Downloading chart as PNG');
   
   // In production, use:
   // import html2canvas from 'html2canvas';
@@ -88,13 +88,13 @@ export function exportToExcel(data: any[], filename: string): void {
 }
 
 // Export to PDF (simulation - in production use jsPDF or react-pdf)
-export function exportToPDF(title: string, data: any, filename: string): void {
+export function exportToPDF(): void {
   // In production, use jsPDF:
   // import jsPDF from 'jspdf';
   // const doc = new jsPDF();
   // doc.text(title, 10, 10);
   // doc.save(filename);
   
-  console.log('Exporting to PDF:', filename);
+  console.log('Exporting to PDF');
   alert('PDF export feature coming soon! For now, please use Print to PDF (Ctrl+P)');
 }

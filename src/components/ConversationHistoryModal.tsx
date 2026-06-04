@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { History, Trash2, MessageSquare, Clock, X, ChevronRight, RotateCcw } from 'lucide-react';
+import { History, Trash2, MessageSquare, Clock, X, ChevronRight } from 'lucide-react';
 import type { HistoryItem } from '@/utils/conversationHistory';
 import { getConversationHistory, deleteConversation, clearAllHistory, formatTimestamp, formatFullDateTime } from '@/utils/conversationHistory';
 

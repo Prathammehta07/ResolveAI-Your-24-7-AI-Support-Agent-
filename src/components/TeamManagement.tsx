@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AgentStatusManager, { type Agent } from './AgentStatusManager';
+import AgentStatusManager from './AgentStatusManager';
 import TeamActivityFeed from './TeamActivityFeed';
 
 interface TeamActivity {

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { LogIn, LogOut, User, Users, Clock } from 'lucide-react';
+import { useState } from 'react';
+import { LogIn, LogOut, Users, Clock } from 'lucide-react';
 
 export interface Agent {
   id: string;

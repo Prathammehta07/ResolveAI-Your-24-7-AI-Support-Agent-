@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { Settings, ExternalLink, MessageSquare, LayoutDashboard, Keyboard, Users, BookOpen } from 'lucide-react';
+import { Settings, MessageSquare, LayoutDashboard, Keyboard, Users, BookOpen } from 'lucide-react';
 import type { Message, TabType, APISettings } from '@/types';
 import { detectIntent } from '@/utils/intentDetector';
 import { useClaudeAPI } from '@/hooks/useClaudeAPI';
@@ -31,7 +31,7 @@ function App() {
   const [tabTransitioning, setTabTransitioning] = useState(false);
 
   // Notifications
-  const { notifications, dismissNotification, showSuccess, showError, showInfo } = useNotifications();
+  const { notifications, dismissNotification, showSuccess, showInfo } = useNotifications();
 
   // Stats
   const [ticketsResolved, setTicketsResolved] = useState(47);
@@ -157,7 +157,7 @@ function App() {
   }, [messages, isTyping, isEscalated, ticketsResolved, avgResolutionTime, satisfactionScore, costSaved, showSuccess]);
 
   // Login handler
-  const handleLogin = useCallback((email: string, password: string) => {
+  const handleLogin = useCallback((email: string) => {
     // Simulate authentication (in production, this would call an API)
     const userName = email.split('@')[0];
     setCurrentUser({ email, name: userName.charAt(0).toUpperCase() + userName.slice(1) });

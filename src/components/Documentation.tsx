@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, ChevronRight, Search, ExternalLink, Code, MessageSquare, Users, BarChart3, Settings, Keyboard, Bell, FileText } from 'lucide-react';
+import { BookOpen, ChevronRight, Search, ExternalLink, MessageSquare, Users, BarChart3, Settings, Keyboard } from 'lucide-react';
 
 interface DocSection {
   id: string;

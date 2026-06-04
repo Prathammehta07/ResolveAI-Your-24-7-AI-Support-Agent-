@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Lock, Eye, EyeOff, LogIn, Sparkles } from 'lucide-react';
 
 interface LoginPageProps {
-  onLogin: (email: string, password: string) => void;
+  onLogin: (email: string) => void;
 }
 
 const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
@@ -36,7 +36,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
 
     // Simulate API call
     setTimeout(() => {
-      onLogin(email, password);
+      onLogin(email);
       setIsLoading(false);
     }, 1000);
   };
